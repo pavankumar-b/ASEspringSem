@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pavan.goeasy" >
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".DashBoard"
+            android:label="@string/title_activity_dash_board" >
+        </activity>
+        <activity
+            android:name=".Movies"
+            android:label="@string/title_activity_movies" >
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name=".WrongPassword"
+            android:label="@string/title_activity_wrong_password" >
+        </activity>
+        <activity
+            android:name=".RegisterComplete"
+            android:label="@string/title_activity_register_complete" >
+        </activity>
+        <activity
+            android:name=".UniversityFPage"
+            android:label="@string/title_activity_university_fpage" >
+        </activity>
+        <activity
+            android:name=".UniversityDashBoard"
+            android:label="@string/title_activity_university_fpage" >
+        </activity>
+        <activity
+            android:name=".UnivWebPage"
+            android:label="@string/title_activity_univ_web_page" >
+        </activity>
+    </application>
+
+</manifest>
